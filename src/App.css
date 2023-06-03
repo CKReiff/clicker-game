@@ -1,0 +1,78 @@
+.App {
+  background: #333;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.frame {
+  background: #EEE;
+  height: 600px;
+  width: 800px;
+  position: relative;
+}
+
+.counter {
+  padding: 10px;
+  text-transform: uppercase;
+  font-size: 30px;
+}
+
+.cookie {
+  padding: 100px;
+  border-radius: 100%;
+  border: none;
+  background-color: #a12fbd;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  transition: all 50ms ease-in-out;
+}
+
+.cookie:active {
+  transform: translate(-50%, -50%) scale(0.9);
+  background-color: #8828a0;
+}
+
+.cookie:before {
+  content: "♥";
+  color: white;
+  font-size: 100px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+.upgrade-menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, .5);
+}
+
+.upgrade {
+  position: relative;
+  padding: 5px 30px 10px 10px;
+  border-bottom: 1px solid #333;
+  line-height: 1.5;
+  font-size: 14px;
+}
+
+.bought {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: rgba(255, 255, 255, .5);
+  padding: 0 3px;
+  font-size: 16px;
+}
+
+.description button {
+  margin-top: 5px;
+  cursor: pointer;
+}
